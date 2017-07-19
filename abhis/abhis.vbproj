@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77CCD82B-2219-4176-A79F-BC3BFA8340C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>abhis.My.MyApplication</StartupObject>
+    <RootNamespace>abhis</RootNamespace>
+    <AssemblyName>abhis</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\my abhi\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>abhis.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>abhis.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CECB4A74D22E3B4478B5E58639F370D59748C2EC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>abhis_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checking.Designer.vb">
+      <DependentUpon>checking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="checking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COPY_DB.Designer.vb">
+      <DependentUpon>COPY_DB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COPY_DB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ENQUIRY.Designer.vb">
+      <DependentUpon>ENQUIRY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENQUIRY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exist_Student_Reg.Designer.vb">
+      <DependentUpon>Exist_Student_Reg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exist_Student_Reg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee_Record.Designer.vb">
+      <DependentUpon>Fee_Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DELETE_RECORD.Designer.vb">
+      <DependentUpon>DELETE_RECORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DELETE_RECORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gen_Registration.Designer.vb">
+      <DependentUpon>gen_Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gen_Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.Designer.vb">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="New_Record_Entry.Designer.vb">
+      <DependentUpon>New_Record_Entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New_Record_Entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchData.Designer.vb">
+      <DependentUpon>SearchData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_By_Course.Designer.vb">
+      <DependentUpon>Search_By_Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search_By_Course.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testing.Designer.vb">
+      <DependentUpon>testing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.vb">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="checking.resx">
+      <DependentUpon>checking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COPY_DB.resx">
+      <DependentUpon>COPY_DB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DELETE_RECORD.resx">
+      <DependentUpon>DELETE_RECORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENQUIRY.resx">
+      <DependentUpon>ENQUIRY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exist_Student_Reg.resx">
+      <DependentUpon>Exist_Student_Reg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Record.resx">
+      <DependentUpon>Fee_Record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gen_Registration.resx">
+      <DependentUpon>gen_Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Record_Entry.resx">
+      <DependentUpon>New_Record_Entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchData.resx">
+      <DependentUpon>SearchData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_By_Course.resx">
+      <DependentUpon>Search_By_Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testing.resx">
+      <DependentUpon>testing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journalist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.13509852648927168 %281%29.Jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.16857785545175374.Jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.18538028144449326.Jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.044177261671870305 %281%29.Jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D Stones Model Android Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d_colorful_squares-wide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-d-20433.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-d-21008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7+Sphere+Wallpapers+%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640-BlackBerry-l.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\640x360.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-81 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-81.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-91 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-91.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-108.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-136 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-136.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\720x1280-165 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02445_HD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06795_HD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journalist1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG-20160623-WA0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journalist2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAEAAQAAAAAAAANUAAAAJDRiYjdhYzcxLThlMTgtNDNhYi05YjM1LTI5MzkwMjAxYTlmMw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\168351261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Best Android Wall_43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.5962858337963961.Jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit false.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit true.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit false-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit true-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Abhis.ico" />
+    <None Include="Resources\speaking.png" />
+    <None Include="Resources\Abhi1.png" />
+    <None Include="Resources\Orange_Silk-549543.jpg" />
+    <None Include="Resources\464209983.jpg" />
+    <None Include="Resources\Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29 and Update for .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29 and Update for .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
