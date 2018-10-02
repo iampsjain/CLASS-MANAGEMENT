@@ -1,4 +1,4 @@
-user name : Abhi
-password : Abhi
+Username : Abhi
+Password : Abhi
 
 just give the path of database in connect module
